@@ -203,16 +203,16 @@ class Relationship():
         # NORMAL INTERACTIONS
         # check how the relationship is
         relation_keys = ['neutral']
-        if self.dislike > 20 or self.jealousy > 20:
+        if self.dislike > 30 or self.jealousy > 30:
             action_possibilities += GENERAL['unfriendly']
             relation_keys.append('unfriendly')
             # increase the chance for unfriendly behavior
-            if self.dislike > 30:
+            if self.dislike > 40:
                 relation_keys.append('unfriendly')
-        if self.platonic_like > 40 or self.comfortable > 30:
+        if self.platonic_like > 30 or self.comfortable > 30:
             action_possibilities += GENERAL['friendly']
             relation_keys.append('friendly')
-        if self.platonic_like > 50 and self.comfortable > 40 and self.trust > 30:
+        if self.platonic_like > 40 and self.comfortable > 40 and self.trust > 30:
             action_possibilities += GENERAL['close']
             relation_keys.append('close')
 

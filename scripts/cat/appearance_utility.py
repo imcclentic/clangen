@@ -270,7 +270,9 @@ def init_pattern(cat):
         init_pelt(cat)
     if cat.pelt.name in ['Calico', 'Tortie']:
         cat.tortiecolour = cat.pelt.colour
-        cat.tortiebase = choice(['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled'])
+        cat.tortiebase = choice(['single', 'tabby', 'bengal', 'marbled', 'ticked', 'smoke', 'rosette', 'speckled,
+                                 'snowflake', 'clouded', 'merle', 'ghosttabby', 'pinstripetabby', 
+                                 'oceloid', 'monarch', 'abyssinian', 'sokoke''])
         if cat.tortiebase == 'tabby':
             cat.tortiepattern = 'tortietabby'
         elif cat.tortiebase == 'bengal':

@@ -364,9 +364,9 @@ def init_white_patches(cat):
                 elif par1.white_patches in albino:
                     cat.white_patches = choice(albino)
                 elif par1.white_patches in [None, little_white, mid_white, high_white]:
-                    white_patches_choice = random.choices(white_list, weights=(20, 20, 20, 20, 19, 1))
+                    white_patches_choice = random.choices(white_list, weights=(15, 10, 20, 20, 19, 1, 10, 5, 0, 0))
                 elif par1.white_patches in mostly_white:
-                    white_patches_choice = random.choices(white_list, weights=(0, 0, 30, 30, 30, 10))
+                    white_patches_choice = random.choices(white_list, weights=(0, 0, 15, 30, 30, 10, 10, 5, 0, 0))
             if par1.white_patches is None and cat.pelt.name == 'Calico':
                 cat.pelt.name = 'Tortie'
             # two parents
@@ -401,155 +401,157 @@ def init_white_patches(cat):
                         cat.pelt.white = False
                         cat.white_patches = None
                     elif par2.white_patches in little_white:
-                        white_patches_choice = random.choices(white_list, weights=(30, 70, 0, 0, 0, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(30, 60, 0, 0, 0, 0, 4, 2, 2, 2))
                     elif par2.white_patches in mid_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 60, 40, 0, 0, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 50, 40, 0, 0, 0, 4, 2, 2, 2))
                     elif par2.white_patches in high_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2))
                     elif par2.white_patches in mostly_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 5, 45, 30, 20, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 5, 35, 30, 20, 0, 4, 2, 2, 2))
                     elif par2.white_patches == 'FULLWHITE':
-                        white_patches_choice = random.choices(white_list, weights=(5, 20, 20, 20, 20, 15, 0, 0, 0, 0))
-                    elif par2.white_patches == black_patches:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0) 
+                        white_patches_choice = random.choices(white_list, weights=(5, 10, 20, 20, 20, 15, 4, 2, 2, 2))
+                    elif par2.white_patches == albino:
+                        white_patches_choice = random.choices(white_list, weights=(0, 6, 40, 20, 0, 10, 0, 2, 10, 2)
+                    elif par2.white_patches == melanistic:
+                        white_patches_choice = random.choices(white_list, weights=(0, 10, 60, 10, 0, 0, 10, 2, 6, 2)  
                     else:
                         cat.white_patches = choice(little_white)
                 elif par1.white_patches in little_white:
                     if par2.white_patches is None:
-                        white_patches_choice = random.choices(white_list, weights=(50, 50, 0, 0, 0, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(40, 50, 0, 0, 0, 0, 4, 2, 2, 2))
                     elif par2.white_patches in little_white:
-                        white_patches_choice = random.choices(white_list, weights=(10, 50, 40, 0, 0, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(10, 50, 30, 0, 0, 0, 4, 2, 2, 2))
                     elif par2.white_patches in mid_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 40, 30, 30, 0, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 30, 30, 30, 0, 0, 4, 2, 2, 2))
                     elif par2.white_patches in high_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 10, 50, 30, 10, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 10, 40, 30, 10, 0, 4, 2, 2, 2))
                     elif par2.white_patches in mostly_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 25, 40, 25, 10, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 25, 30, 25, 10, 4, 2, 2, 2))
                     elif par2.white_patches == 'FULLWHITE':
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 45, 35, 20, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 35, 35, 20, 4, 2, 2, 2))
                     elif par2.white_patches == black_patches:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0) 
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2) 
                     elif par2.white_patches == chosen:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2)
                     elif par2.white_patches == albino:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)
+                        white_patches_choice = random.choices(white_list, weights=(0, 6, 40, 20, 0, 10, 0, 2, 10, 2)
                     elif par2.white_patches == melanistic:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)                                            
+                        white_patches_choice = random.choices(white_list, weights=(0, 10, 60, 10, 0, 0, 10, 2, 6, 2)                                            
                     else:
                         cat.white_patches = choice(little_white)
                 elif par1.white_patches in mid_white:
                     if par2.white_patches is None:
-                        white_patches_choice = random.choices(white_list, weights=(0, 60, 40, 0, 0, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 50, 40, 0, 0, 0, 4, 2, 2, 2))
                     elif par2.white_patches in little_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 40, 30, 30, 0, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 30, 30, 30, 0, 0, 4, 2, 2, 2))
                     elif par2.white_patches in mid_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2))
                     elif par2.white_patches in high_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 30, 50, 20, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 30, 40, 20, 0, 4, 2, 2, 2))
                     elif par2.white_patches in mostly_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 20, 50, 20, 10, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 20, 40, 20, 10, 4, 2, 2, 2))
                     elif par2.white_patches == 'FULLWHITE':
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 30, 40, 30, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 30, 30, 30, 4, 2, 2, 2))
                     elif par2.white_patches == black_patches:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2)
                     elif par2.white_patches == chosen:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2)
                     elif par2.white_patches == albino:
-                        white_patches_choice = random.choices(white_list, weights=(0, 6, 50, 20, 0, 10, 0, 2, 10, 2)
+                        white_patches_choice = random.choices(white_list, weights=(0, 6, 40, 20, 0, 10, 0, 2, 10, 2)
                     elif par2.white_patches == melanistic:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 4, 2, 2, 10)                                               
+                        white_patches_choice = random.choices(white_list, weights=(0, 10, 60, 10, 0, 0, 10, 2, 6, 2)                                                
                     else:
                         cat.white_patches = choice(mid_white)
                 elif par1.white_patches in high_white:
                     if par2.white_patches is None:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2))
                     elif par2.white_patches in little_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 10, 50, 30, 10, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 10, 40, 30, 10, 0, 4, 2, 2, 2))
                     elif par2.white_patches in mid_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 30, 50, 20, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 30, 40, 20, 0, 4, 2, 2, 2))
                     elif par2.white_patches in high_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 30, 50, 20, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 30, 40, 20, 0, 4, 2, 2, 2))
                     elif par2.white_patches in mostly_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 20, 30, 30, 20, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 10, 30, 30, 20, 4, 2, 2, 2))
                     elif par2.white_patches == 'FULLWHITE':
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 25, 50, 25, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 15, 50, 25, 4, 2, 2, 2))
                     elif par2.white_patches == black_patches:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2)
                     elif par2.white_patches == chosen:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2)
                     elif par2.white_patches == albino:
-                        white_patches_choice = random.choices(white_list, weights=(0, 6, 50, 20, 0, 10, 0, 2, 10, 2)
+                        white_patches_choice = random.choices(white_list, weights=(0, 6, 40, 20, 0, 10, 0, 2, 10, 2)
                     elif par2.white_patches == melanistic:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 4, 2, 2, 10)                                               
+                        white_patches_choice = random.choices(white_list, weights=(0, 10, 60, 10, 0, 0, 10, 2, 6, 2)                                               
                     else:
                         cat.white_patches = choice(high_white)
                 elif par1.white_patches in mostly_white:
                     if par2.white_patches is None:
-                        white_patches_choice = random.choices(white_list, weights=(0, 5, 45, 30, 20, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 5, 35, 30, 20, 4, 2, 2, 2))
                     elif par2.white_patches in little_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 25, 40, 25, 10, 0, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 25, 30, 25, 10, 0, 4, 2, 2, 2))
                     elif par2.white_patches in mid_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 20, 50, 20, 10, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 20, 40, 20, 10, 4, 2, 2, 2))
                     elif par2.white_patches in high_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 20, 30, 30, 20, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 20, 20, 30, 20, 4, 2, 2, 2))
                     elif par2.white_patches in mostly_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 20, 60, 20, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 20, 50, 20, 4, 2, 2, 2))
                     elif par2.white_patches == 'FULLWHITE':
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 0, 60, 40,0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 0, 50, 40, 4, 2, 2, 2))
                     elif par2.white_patches == black_patches:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2)
                     elif par2.white_patches == chosen:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2)
                     elif par2.white_patches == albino:
-                        white_patches_choice = random.choices(white_list, weights=(0, 6, 50, 20, 0, 10, 0, 2, 10, 2)
+                        white_patches_choice = random.choices(white_list, weights=(0, 6, 40, 20, 0, 10, 0, 2, 10, 2)
                     elif par2.white_patches == melanistic:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 4, 2, 2, 10)                                            
+                        white_patches_choice = random.choices(white_list, weights=(0, 10, 60, 10, 0, 0, 10, 2, 6, 2)                                            
                     else:
                         cat.white_patches = choice(mostly_white)
                 elif par1.white_patches == 'FULLWHITE':
                     if par2.white_patches is None:
-                        white_patches_choice = random.choices(white_list, weights=(5, 20, 20, 20, 20, 15, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(5, 10, 20, 20, 20, 15, 4, 2, 2, 2))
                     elif par2.white_patches in little_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 45, 35, 20, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 35, 35, 20, 4, 2, 2, 2))
                     elif par2.white_patches in mid_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 30, 40, 30, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 20, 40, 30, 4, 2, 2, 2))
                     elif par2.white_patches in high_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 25, 50, 25, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 15, 50, 25,  4, 2, 2, 2))
                     elif par2.white_patches in mostly_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 0, 60, 40, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 0, 50, 40, 4, 2, 2, 2))
                     elif par2.white_patches == 'FULLWHITE':
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 0, 40, 60, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 0, 30, 60, 0, 2, 6, 2))
                     elif par2.white_patches == black_patches:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)  
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2)  
                     elif par2.white_patches == chosen:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 4, 2, 2, 2)
                     elif par2.white_patches == albino:
-                        white_patches_choice = random.choices(white_list, weights=(0, 6, 50, 20, 0, 10, 0, 2, 10, 2)
+                        white_patches_choice = random.choices(white_list, weights=(0, 6, 40, 20, 0, 10, 0, 2, 10, 2)
                     elif par2.white_patches == melanistic:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 4, 2, 2, 10)                                              
+                        white_patches_choice = random.choices(white_list, weights=(0, 10, 60, 10, 0, 0, 10, 2, 6, 2)                                              
                     else:
                         cat.white_patches = choice(mostly_white)
               elif par1.white_patches == black_patches:
                     if par2.white_patches is None:
-                        white_patches_choice = random.choices(white_list, weights=(5, 20, 20, 20, 20, 15, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(4, 20, 20, 20, 0, 0, 30, 2, 2, 2))
                     elif par2.white_patches in little_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 45, 35, 20, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 35, 15, 0, 30, 2, 2, 2))
                     elif par2.white_patches in mid_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 30, 40, 30, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(4, 0, 0, 20, 20, 20, 30, 2, 2, 2))
                     elif par2.white_patches in high_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 25, 50, 25, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 20, 20, 24, 30, 2, 2, 2))
                     elif par2.white_patches in mostly_white:
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 0, 60, 40, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 0, 34, 40, 30, 2, 2, 2))
                     elif par2.white_patches == 'FULLWHITE':
-                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 0, 40, 60, 0, 0, 0, 0))
+                        white_patches_choice = random.choices(white_list, weights=(0, 0, 0, 0, 30, 34, 30, 2, 2, 2))
                     elif par2.white_patches == black_patches:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)    
+                        white_patches_choice = random.choices(white_list, weights=(0, 24, 20, 10, 0, 0, 30, 2, 2, 10)    
                     elif par2.white_patches == chosen:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 0, 0, 0, 0)
+                        white_patches_choice = random.choices(white_list, weights=(0, 20, 50, 20, 0, 0, 30, 2, 2, 2)
                     elif par2.white_patches == albino:
-                        white_patches_choice = random.choices(white_list, weights=(0, 6, 50, 20, 0, 10, 0, 2, 10, 2)
+                        white_patches_choice = random.choices(white_list, weights=(10, 4, 20, 20, 0, 10, 30, 2, 2, 2)
                     elif par2.white_patches == melanistic:
-                        white_patches_choice = random.choices(white_list, weights=(0, 20, 60, 20, 0, 0, 4, 2, 2, 10)                                              
+                        white_patches_choice = random.choices(white_list, weights=(20, 0, 0, 0, 0, 4, 50, 2, 2, 10)                                              
                     else:
                         cat.white_patches = choice(mostly_white)
             elif par1.white_patches == chosen:
@@ -647,9 +649,9 @@ def init_white_patches(cat):
                 if cat.pelt.name in ['TwoColour', 'Tabby', 'Speckled', 'Marbled', 'Bengal', 'Ticked', 'Smoke', 'Rosette', 
                                     "Snowflake", "Abyssinian", "Clouded", "Merle", "GhostTabby", "PinstripeTabby", "Doberman", "Oceloid",
                                                         "Monarch", "Sokoke", "Classictabby","Lykoi", "Mackereltabby", "Wavetabby"]:
-                    white_patches_choice = random.choices(white_list, weights=(0, 30, 40, 30, 0, 0))
+                    white_patches_choice = random.choices(white_list, weights=(0, 30, 20, 30, 0, 0, 15, 5, 0, 0))
                 elif cat.pelt.name in ['Tortie']:
-                    white_patches_choice = random.choices(white_list, weights=(0, 60, 40, 0, 0, 0))
+                    white_patches_choice = random.choices(white_list, weights=(0, 40, 40, 0, 0, 0, 15, 5, 0, 0))
                 elif cat.pelt.name in ['Calico']:
                     cat.white_patches = choice([high_white])
                 elif pelt_choice == 1 and vit_chance == 1 and non_white_pelt:

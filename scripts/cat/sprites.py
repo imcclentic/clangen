@@ -390,6 +390,17 @@ for a, i in enumerate(['HEART', 'LILTWO', 'GLASS', 'MOORISH', 'POINTMARK']):
     sprites.make_group('whitepatches4', (a, 1), 'white' + i)
     sprites.make_group('whitepatches4extra', (a, 1), 'whiteextra' + i, sprites_y=2)
     
+#black patches and chosen marks
+for a, i in enumerate(['BCOLOURPOINT', 'BRAGDOLL', 'BPANTS', 'BREVERSEPANTS', 'BGLASS', 'BMISTER']):
+    sprites.make_group('blackpatches', (a, 0), f'white{i}')
+    sprites.make_group('blackpatchesextra', (a, 0), f'whiteextra{i}', sprites_y=2)
+for a, i in enumerate(['BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN']):
+    sprites.make_group('blackpatches', (a, 1), f'white{i}')
+    sprites.make_group('blackpatchesextra', (a, 1), f'whiteextra{i}', sprites_y=2)
+for a, i in enumerate(['CHOSENDF', 'CHOSENSC']):
+    sprites.make_group('blackpatches', (a, 2), f'white{i}')
+    sprites.make_group('blackpatchesextra', (a, 2), f'whiteextra{i}', sprites_y=2)
+    
 #more white marks
 for a, i in enumerate(['MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT']):
     sprites.make_group('white2', (a, 0), f'white{i}')

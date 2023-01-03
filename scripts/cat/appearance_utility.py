@@ -603,10 +603,9 @@ def init_white_patches(cat):
                     elif par2.white_patches in albino:
                         white_patches_choice = random.choices(white_list, weights=(8, 0, 0, 0, 10, 50, 0, 2, 30, 0))
                     elif par2.white_patches in melanistic:
-                        white_patches_choice = random.choices(white_list, weights=(8, 0, 0, 0, 0, 10, 20, 2, 30, 30)     
+                        white_patches_choice = random.choices(white_list, weights=(8, 0, 0, 0, 0, 10, 20, 2, 30, 30))     
                     else:
-                        cat.white_patches = choice(mostly_white)
-                                                          
+                        cat.white_patches = choice(mostly_white)                                        
                 elif par1.white_patches in melanistic:
                     if par2.white_patches is None:
                         white_patches_choice = random.choices(white_list, weights=(5, 20, 20, 20, 10, 0, 4, 2, 2, 10))

@@ -9,9 +9,6 @@
         "caught (cat) in a lie.",
         "had a spat with (cat) over a piece of prey on the freshkill pile.",
         "bickered about something trivial with (cat).",
-        #"finds the way (cat) acts increasingly uncomfortable.",
-        #"said something that rubbed (cat) the wrong way.",
-        #"caught (cat) complaining about them behind their back.",
         "shudders at the sound of (cat)'s voice."
     ],
     "neutral": [
@@ -21,10 +18,6 @@
         "is sharing prey with (cat).",
         "had a huge argument with (cat).",
         "had a fight with (cat).",
-        #"thinks that the prey (cat) is biting into on the other side of camp looks delicious.",
-        #"called (cat) the wrong name.",
-        #"saw (cat) take the last piece of prey from the freshkill pile.",
-        #"thinks (cat) has a strange sense of humor.",
         "appreciates how (cat) always seems to ask how they're doing.",
         "heard an ugly rumor about (cat).",
         "caught (cat) in a lie.",
@@ -55,7 +48,6 @@
         "saved a piece of freshkill that they know is (cat)'s favorite.",
         "defends (cat) from a clanmate's rude remarks.",
         "could recognize (cat) just by the sound of their paw steps.",
-        "caught (cat) in a lie.",
-        #"caught (cat) complaining about them behind their back."
+        "caught (cat) in a lie."
     ]
 }

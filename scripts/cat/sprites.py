@@ -408,7 +408,7 @@ for a, i in enumerate([None]):
 for a, i in enumerate(['ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET']):
     sprites.make_group('melalbino', (a, 1), f'white{i}')
     sprites.make_group('melalbinoextra', (a, 1), f'whiteextra{i}', sprites_y=2)
-for a, i in enumerate(['MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK']):
+for a, i in enumerate(['MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK']):
     sprites.make_group('melalbino', (a, 2), f'white{i}')
     sprites.make_group('melalbinoextra', (a, 2), f'whiteextra{i}', sprites_y=2)
 

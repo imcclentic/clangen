@@ -158,10 +158,10 @@ class Sprites():
             "OAK LEAVES", "CATMINT", "MAPLE SEED", "JUNIPER"]):
             sprites.make_group('medcatherbs', (a, 3), f'acc_herbs{i}')
             sprites.make_group('medcatherbsextra', (a, 3), f'acc_herbsextra{i}', sprites_y=2)
-        sprites.make_group('medcatherbs', (5, 2), 'acc_herbsDRY HERBS')
-        sprites.make_group('medcatherbsextra', (5, 2), 'acc_herbsextraDRY HERBS', sprites_y=2)
+            sprites.make_group('medcatherbs', (5, 2), 'acc_herbsDRY HERBS')
+            sprites.make_group('medcatherbsextra', (5, 2), 'acc_herbsextraDRY HERBS', sprites_y=2)
         
-          for a, i in enumerate([
+        for a, i in enumerate([
             "POPPY FLOWER", "JUNIPER BERRIES", "DAISY FLOWER", "BORAGE FLOWER", "OAK LEAF", "BEECH LEAF"]):
             sprites.make_group('flowers', (a, 0), f'acc_herbs{i}')
             sprites.make_group('flowersextra', (a, 0), f'acc_herbsextra{i}', sprites_y=2)
@@ -172,7 +172,7 @@ class Sprites():
         for a, i in enumerate([
             "BRIGHT-EYE FLOWER", "LAVENDER FLOWER", "YARROW CLUMP"]):
             sprites.make_group('flowers', (a, 2), f'acc_herbs{i}')
-            sprites.make_group('flowersextra', (a, 2), f'acc_herbsextra{i}', sprites_y=2)v
+            sprites.make_group('flowersextra', (a, 2), f'acc_herbsextra{i}', sprites_y=2)
 
         for a, i in enumerate([
             "RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "MOTH WINGS", "CICADA WINGS"]):
@@ -260,7 +260,6 @@ for x in [
     'bellcollars', 'bellcollarsextra', 'bowcollars', 'bowcollarsextra',
     'speckledcolours2', 'speckledextra2', 'tabbycolours2', 'tabbyextra2',
     'rosettecolours', 'rosetteextra', 'smokecolours', 'smokeextra', 'tickedcolors', 'tickedextra',
-    'whitepatchesryos', 'whitepatchesryosextra', 'whitepatchesbeejeans', 'whitepatchesbeejeansextra',
     'Newscars', 'Newscarsextra', 'shaders', 'lineartdead',
     'tortiecolourssolid', 'tortiecolourstabby', 'tortiecoloursbengal', 'tortiecoloursmarbled',
     'tortiecoloursticked', 'tortiecolourssmoke', 'tortiecoloursrosette', 'tortiecoloursspeckled',

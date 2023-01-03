@@ -33,7 +33,7 @@ class TwoColour():
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, length):
         self.colour = colour
@@ -61,7 +61,7 @@ class Tabby():
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC'
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -92,7 +92,7 @@ class Marbled():
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -123,7 +123,7 @@ class Rosette():
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -155,7 +155,7 @@ class Smoke():
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -187,7 +187,7 @@ class Ticked():
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -219,7 +219,7 @@ class Speckled():
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -250,7 +250,7 @@ class Bengal():
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
 
     ]
     def __init__(self, colour, white, length):
@@ -280,7 +280,7 @@ class Snowflake(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -309,7 +309,7 @@ class Abyssinian(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -338,7 +338,7 @@ class Clouded(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -367,7 +367,7 @@ class Merle(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -395,7 +395,7 @@ class GhostTabby(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -423,7 +423,7 @@ class PinstripeTabby(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -450,7 +450,7 @@ class Doberman(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -477,7 +477,7 @@ class Oceloid(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -505,7 +505,7 @@ class Monarch(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -533,7 +533,7 @@ class Sokoke(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -561,7 +561,7 @@ class Sokoke(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -589,7 +589,7 @@ class Classictabby(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -617,7 +617,7 @@ class Lykoi(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -645,7 +645,7 @@ class Mackereltabby(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -673,7 +673,7 @@ class Waveltabby(object):
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, colour, white, length):
         self.white = white  # boolean; does cat have white on it or no
@@ -699,7 +699,7 @@ class Tortie():
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
         ]
 
     def __init__(self, white, length):
@@ -726,7 +726,7 @@ class Calico():
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN', 'CHOSENDF', 'CHOSENSC',
         'MOJO', 'STAINS1', 'STAINS2', 'HALFHEART', 'FRECKLES2', 'WHITEEAR', 'CRESCENT',
         'HUSKY', 'COW', 'MASK', 'SKUNK2', 'BROWNSPOTS', 'SWIFTPAW', 'ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET',
-        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK'
+        'MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK'
     ]
     def __init__(self, length):
         self.colour = choice(["SILVER", "GREY", "DARKGREY", "BLACK",
@@ -834,7 +834,7 @@ black_patches = ['BCOLOURPOINT', 'BRAGDOLL', 'BPANTS', 'BREVERSEPANTS', 'BGLASS'
         'BFANCY', 'BFRECKLES', 'BRINGTAIL', 'BHALFFACE', 'BFAROFA', 'BDAMIEN']
 chosen = ['CHOSENDF', 'CHOSENSC']
 albino = ['ALBINOPINK', 'ALBINOBLUE', 'ALBINORED', 'ALBINOVIOLET']
-melanistic = ['MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANSTICDARK']
+melanistic = ['MELANISTICLIGHT', 'MELANISTICMEDIUM', 'MELANISTICDARK']
 white_sprites = [
     little_white, mid_white, high_white, mostly_white, point_markings, vit, black_patches, chosen, albino, melanistic, 'FULLWHITE', 'EXTRA', 'POINTMARK'
 ]

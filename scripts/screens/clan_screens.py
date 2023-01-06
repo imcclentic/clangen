@@ -397,6 +397,7 @@ class StarClanScreen(Screens):
 
     def screen_switches(self):
         # Determine the dead, non-exiled cats.
+        cat_profiles()
         self.get_dead_cats()
 
         self.search_bar = pygame_gui.elements.UITextEntryLine(pygame.Rect((421, 142), (147, 23)),
@@ -448,7 +449,7 @@ class StarClanScreen(Screens):
         )
         self.filter_age.hide()
 
-        cat_profiles()
+
 
     def update_search_cats(self, search_text):
         """Run this function when the search text changes, or when the screen is switched to."""
@@ -496,9 +497,11 @@ class StarClanScreen(Screens):
         # Remove the images for currently listed cats
         for cat in self.display_cats:
             cat.kill()
+        self.display_cats = []
 
         for name in self.cat_names:
             name.kill()
+        self.cat_names = []
 
         # Generate object for the current cats
         pos_x = 0
@@ -645,6 +648,7 @@ class DFScreen(Screens):
 
     def screen_switches(self):
         # Determine the dead, non-exiled cats.
+        cat_profiles()
         self.get_dead_cats()
 
         self.search_bar = pygame_gui.elements.UITextEntryLine(pygame.Rect((421, 142), (147, 23)),
@@ -696,7 +700,6 @@ class DFScreen(Screens):
         )
         self.filter_age.hide()
 
-        cat_profiles()
 
     def update_search_cats(self, search_text):
         """Run this function when the search text changes, or when the screen is switched to."""
@@ -744,9 +747,11 @@ class DFScreen(Screens):
         # Remove the images for currently listed cats
         for cat in self.display_cats:
             cat.kill()
+        self.display_cats = []
 
         for name in self.cat_names:
             name.kill()
+        self.cat_names = []
 
         # Generate object for the current cats
         pos_x = 0
@@ -868,6 +873,7 @@ class ListScreen(Screens):
 
     def screen_switches(self):
         # Determine the living, non-exiled cats.
+        cat_profiles()
         self.get_living_cats()
 
         self.search_bar = pygame_gui.elements.UITextEntryLine(pygame.Rect((421, 142), (147, 23)),
@@ -920,7 +926,6 @@ class ListScreen(Screens):
         )
         self.filter_age.hide()
 
-        cat_profiles()
 
     def exit_screen(self):
         self.hide_menu_buttons()
@@ -987,9 +992,11 @@ class ListScreen(Screens):
         # Remove the images for currently listed cats
         for cat in self.display_cats:
             cat.kill()
+        self.display_cats = []
 
         for name in self.cat_names:
             name.kill()
+        self.cat_names = []
 
         # Generate object for the current cats
         pos_x = 0
